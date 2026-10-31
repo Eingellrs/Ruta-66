@@ -1,0 +1,245 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4ead8;
+    color: #29251f;
+    line-height: 1.6;
+}
+
+/* ENCABEZADO */
+header {
+    background-color: #252525;
+    color: #f5c16c;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    font-size: 48px;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+header p {
+    color: white;
+    font-size: 18px;
+}
+
+/* SECCION DE LA FOTO */
+.fotografia {
+    text-align: center;
+    padding: 25px 15px;
+}
+
+.fotografia img {
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+    border: 5px solid #a34a28;
+    border-radius: 10px;
+}
+
+/* CONTENIDO PRINCIPAL */
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+main h2 {
+    color: #a34a28;
+    text-align: center;
+}
+
+main h3 {
+    color: #744024;
+    border-bottom: 2px solid #d6a15d;
+    padding-bottom: 5px;
+}
+
+main section {
+    background-color: #fffaf0;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/* PIE DE PAGINA */
+footer {
+    background-color: #252525;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* ADAPTACION A CELULARES */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 34px;
+    }
+
+    .fotografia img {
+        width: 95%;
+    }
+
+    main {
+        padding: 15px;
+    }
+}
+
+
+/* ESTILOS PARA LOS EVENTOS DE JAVASCRIPT */
+header {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.encabezado-resaltado {
+    background-color: #a34a28;
+    color: #fffaf0;
+}
+
+.imagen-ampliada {
+    transform: scale(1.04);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.25);
+    cursor: zoom-out !important;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.titulo-alternativo {
+    color: #252525 !important;
+    background-color: #f5c16c;
+    border-radius: 5px;
+    padding: 5px 8px;
+}
+
+.modo-oscuro {
+    background-color: #222;
+    color: #f4ead8;
+}
+
+.modo-oscuro main section {
+    background-color: #38332d;
+    color: #f4ead8;
+}
+
+.modo-oscuro main h2,
+.modo-oscuro main h3 {
+    color: #f5c16c;
+}
+
+.imagen-no-disponible {
+    display: block;
+    min-height: 35px;
+    padding: 12px;
+    border: 2px dashed #a34a28;
+    background-color: #fffaf0;
+    color: #29251f;
+    object-fit: contain;
+}
+
+.ayuda-eventos {
+    font-size: 0.9rem;
+    color: #f5c16c;
+    margin-bottom: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        transition: none !important;
+    }
+}
+
+
+/* PORTADA PANORÁMICA DE RUTA 66 */
+.fotografia {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+    background-color: #252525;
+}
+
+.fotografia h2 {
+    position: absolute;
+    z-index: 1;
+    left: 5%;
+    bottom: 24px;
+    max-width: 90%;
+    margin: 0;
+    padding: 12px 20px;
+    color: #fffaf0;
+    background: rgba(37, 37, 37, 0.72);
+    border-left: 5px solid #f5c16c;
+    border-radius: 4px;
+    text-align: left;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.55);
+}
+
+.fotografia img.imagen-portada {
+    display: block;
+    width: 100%;
+    max-width: none;
+    height: clamp(260px, 48vw, 560px);
+    object-fit: cover;
+    object-position: center 55%;
+    border: 0;
+    border-radius: 0;
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    .fotografia h2 {
+        left: 4%;
+        bottom: 14px;
+        padding: 8px 12px;
+        font-size: 1.1rem;
+    }
+
+    .fotografia img.imagen-portada {
+        height: 300px;
+        object-position: 42% center;
+    }
+}
+
+
+/* Imágenes de la página */
+.fotografia img.imagen-portada {
+    width: 100%;
+    max-width: 1000px;
+    max-height: 560px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+.introduccion { text-align: center; }
+.historia-vehiculo { overflow: hidden; }
+.historia-vehiculo .imagen-vehiculo {
+    display: block;
+    width: 100%;
+    max-height: 480px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 12px auto 18px;
+    cursor: zoom-in;
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+.imagen-ampliada {
+    transform: scale(1.025);
+    box-shadow: 0 8px 22px rgba(0,0,0,.28);
+}
+.encabezado-resaltado { box-shadow: inset 0 -6px 0 #d6a15d; }
+.titulo-alternativo { color: #2d7180 !important; }
+.modo-oscuro { background-color: #202020; color: #f4ead8; }
+.modo-oscuro main section { background-color: #333; color: #f4ead8; }
+.modo-oscuro main h2, .modo-oscuro main h3 { color: #f5c16c; }
+.ayuda-eventos { font-size: .9rem; opacity: .9; }
+@media (max-width: 600px) {
+    .fotografia img.imagen-portada, .historia-vehiculo .imagen-vehiculo { max-height: 320px; }
+}

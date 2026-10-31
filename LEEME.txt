@@ -1,0 +1,21 @@
+PROYECTO: RUTA 66 - ACTIVIDAD PRACTICA III
+
+Archivos incluidos:
+- index.html: pagina web con las cuatro imagenes y sus textos historicos.
+- estilos.css: diseño y adaptacion para celular.
+- script.js: cinco eventos JavaScript.
+- carros-antiguos.png: imagen principal de la Ruta 66.
+- volkswagen.png: Volkswagen Escarabajo.
+- moto-viajera.png: motocicleta clasica.
+- Vespa.png: Vespa vintage.
+
+COMO ABRIR:
+1. Extrae el archivo ZIP en una carpeta.
+2. Abre index.html con doble clic para ver la pagina en tu navegador.
+3. Mantén todos los archivos juntos en la misma carpeta.
+
+EVENTOS PARA PROBAR:
+- Pasa el cursor por el encabezado para resaltarlo.
+- Haz clic en una imagen para ampliarla.
+- Haz doble clic en un titulo para cambiar su color.
+- Presiona la tecla D para activar o desactivar el modo oscuro.
